@@ -1,6 +1,27 @@
-baseURL = 'https://jiangjuseriluo.github.io/'
-languageCode = 'zh'
-title = 'My Day'
-theme  =   'ananke' 
- 
- 
+baseURL = "https://xingyunxi.github.io/"
+languageCode = "zh-cn"
+title = "My Day"
+disableKinds = ['taxonomy', 'term']
+
+[taxonomies]
+  author = "xingyunxi"
+  email = "1253127735@qq.com"
+
+[params]
+  keywords = [""]
+  description = ""
+  mainSections = ["writing"]
+
+[outputs]
+  home     = ["HTML", "RSS"]
+  section  = ["HTML"]
+
+[permalinks]
+  writing = "/:filename"
+  hidden = "/:filename"
+  pages = "/:filename"
+  
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
